@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Spot</title>
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/material.blue-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+</head>
+
+<body onload="onLoad()">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Spot</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation">
+                  <button  class="mdl-button mdl-js-button mdl-button--icon" onclick="history.go(-1);">
+    <!--     <i class="material-icons">arrow_back</i> -->
+
+        </button>
+
+ <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+   <label class="mdl-button mdl-js-button mdl-button--icon" for="buscar">
+     <i class="material-icons">search</i>
+
+   </label>
+
+   <div class="mdl-textfield__expandable-holder">
+
+     <input class="mdl-textfield__input" type="text" id="buscar" value="" >
+     <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+   </div>
+ </div>
+
+
+      </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Spot</span>
+            <nav class="mdl-navigation">
+                <a id="lugares" class="mdl-navigation__link" href="lugares.html">Lugares</a>
+                <a id="eanimo" class="mdl-navigation__link" href="eanimo.html">Viajar por estado de ánimo</a>
+                <a id="experi" class="mdl-navigation__link" href="experi.html">Mis Experiencias</a>
+                <a id="gastos" class="mdl-navigation__link" href="gatos.html">Mis Gastos</a>
+                <a id="album" class="mdl-navigation__link" href="album.html">Mi Album</a>
+            </nav>
+        </div>
+
+    </div>
+          <div class="collection">
+       <a href="#!" class="collection-item">Alvin</a>
+       <a href="#!" class="collection-item active">Alvin</a>
+       <a href="#!" class="collection-item">Alvin</a>
+       <a href="#!" class="collection-item">Alvin</a>
+     </div><br><br>
+
+
+     <style>
+     .demo-list-three {
+       width: 650px;
+     }
+     </style>
+
+     <ul class="demo-list-three mdl-list" id="lista">
+       <li class="mdl-list__item mdl-list__item--three-line">
+         <span class="mdl-list__item-primary-content">
+           <i class="material-icons mdl-list__item-avatar">person</i>
+           <span>Bryan Cranston</span>
+           <span class="mdl-list__item-text-body">
+             Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+             for playing Hal in Malcom in the Middle.
+           </span>
+         </span>
+
+       </li>
+       <li class="mdl-list__item mdl-list__item--three-line">
+         <span class="mdl-list__item-primary-content">
+           <i class="material-icons  mdl-list__item-avatar">person</i>
+           <span>Aaron Paul</span>
+           <span class="mdl-list__item-text-body">
+             Aaron Paul played the role of Jesse in Breaking Bad. He also featured in
+             the "Need For Speed" Movie.
+           </span>
+         </span>
+
+       </li>
+       <li class="mdl-list__item mdl-list__item--three-line">
+         <span class="mdl-list__item-primary-content">
+           <i class="material-icons  mdl-list__item-avatar">person</i>
+           <span>Bob Odenkirk</span>
+           <span class="mdl-list__item-text-body">
+             Bob Odinkrik played the role of Saul in Breaking Bad. Due to public fondness for the
+             character, Bob stars in his own show now, called "Better Call Saul".
+           </span>
+         </span>
+
+       </li>
+     </ul>
+
+
+     <script src="js/jquery.min.js" charset="utf-8"></script>
+     <script src="js/material.min.js" charset="utf-8"></script>
+     <script src="js/spot.js"></script>
+     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+     <script>
+     function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+        function onDeviceReady() {
+            document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Spot</title>
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/material.blue-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body onload="onLoad()">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Spot</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation">
+                  <button  class="mdl-button mdl-js-button mdl-button--icon" onclick="history.go(-1);">
+         <i class="material-icons">arrow_back</i>
+        </button>
+
+      </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Spot</span>
+            <nav class="mdl-navigation">
+                <a id="lugares" class="mdl-navigation__link" href="lugares.html">Lugares</a>
+                <a id="eanimo" class="mdl-navigation__link" href="eanimo.html">Viajar por estado de ánimo</a>
+                <a id="experi" class="mdl-navigation__link" href="experi.html">Mis Experiencias</a>
+                <a id="gastos" class="mdl-navigation__link" href="gatos.html">Mis Gastos</a>
+                <a id="album" class="mdl-navigation__link" href="album.html">Mi Album</a>
+            </nav>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="row">
+
+        <ul class="demo-list-three mdl-list" id="lista">
+
+        </ul>
+    </div>
+
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+         <script src="js/material.min.js" charset="utf-8"></script>
+         <script src="js/ea.js" charset="utf-8"></script>
+
+         <script>
+         function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }
+            function onDeviceReady() {
+                document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+         </script>
+
+</body>
+
+</html>
